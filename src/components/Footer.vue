@@ -1,6 +1,7 @@
 <template>
 	<footer>
 		<h3>{{ info }}</h3>
+		<h4>{{ message }}</h4>
 	</footer>
 </template>
 <script type="text/javascript">
@@ -8,9 +9,11 @@
 		name: 'app-footer',
 		data() {
 			return {
-				info: 'copyright @vue'
+				info: 'copyright @用vue webpack框架 开发组件项目'
 			}
-		}
+		},
+		// 父组件传值
+		props: ['message']
 	}
 </script>
 

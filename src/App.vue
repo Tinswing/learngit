@@ -3,7 +3,7 @@
     <app-header></app-header>
     <h1>{{ title }}</h1>
     <users></users>
-    <app-footer></app-footer>
+    <app-footer v-bind:message="shuoming"></app-footer>
   </div>
 </template>
 
@@ -17,7 +17,8 @@ export default {
   name: 'App',
   data() {
     return {
-      title: 'Vue脚手架'
+      title: 'Vue脚手架',
+      shuoming: 'good tools'
     }
   },
   components: {
