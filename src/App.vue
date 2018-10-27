@@ -1,40 +1,35 @@
 <template>
   <div id="app">
-    <app-header></app-header>
-    <h1>{{ title }}</h1>
-    <users></users>
-    <app-footer v-bind:message="shuoming"></app-footer>
+    <ul>
+      <li>
+        <router-link to="helloworld">helloworld</router-link>
+      </li>
+      <li>
+        <router-link to="/">home</router-link>
+      </li>
+    </ul>
+    <router-view></router-view>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld'
-import Users from './components/Users.vue'
-import Header from './components/Header.vue'
-import Footer from './components/Footer.vue'
 
 export default {
   name: 'App',
   data() {
     return {
-      title: 'Vue脚手架',
-      shuoming: 'good tools'
+      
     }
   },
   components: {
-    'users': Users,
-    'app-header': Header,
-    'app-footer': Footer
+
+  },
+  methods: {
+
   }
 }
 </script>
 
 <style>
-  body {
-    padding: 0;
-    margin: 0;
-  }
-  h1 {
-    text-align:center;
-  }
+
 </style>

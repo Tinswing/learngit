@@ -1,7 +1,6 @@
 <template>
 	<footer>
 		<h3>{{ info }}</h3>
-		<h4>{{ message }}</h4>
 	</footer>
 </template>
 <script type="text/javascript">

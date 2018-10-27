@@ -1,5 +1,5 @@
 <template>
-	<header>
+	<header v-on:click="changeTitle">
 		<h1>{{ title }}</h1>
 		<h3>author: tinswing</h3>
 	</header>
@@ -10,6 +10,11 @@
 		data() {
 			return {
 				title: 'Vue init webpack vue-playlist'
+			}
+		},
+		methods: {
+			changeTitle: function () {
+				this.$emit("titleChanged","子向父组件传值");
 			}
 		}
 	}
